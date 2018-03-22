@@ -2,9 +2,6 @@
 
 A jQuery Plugin to make masks on input field to US phone format.
 
-Follow Me [@rajaramtt](//twitter.com/rajaramtt) for latest updates.
-Follow Me [@rajaramtt](//fb.com/rajaramtt) for latest updates.
-
 
 ## Quick start
 
@@ -50,7 +47,8 @@ $(document).ready(function () {
 ## Help/Assistance
 
 Email Us : rajaram.tavalam@gmail.com          
-
+Follow Me [@rajaramtt](//twitter.com/rajaramtt) for latest updates.
+Follow Me [@rajaramtt](//fb.com/rajaramtt) for latest updates.
 
 ## License
 
