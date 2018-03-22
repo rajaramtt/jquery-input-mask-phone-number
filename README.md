@@ -47,8 +47,9 @@ $(document).ready(function () {
 ## Help/Assistance
 
 Email Us : rajaram.tavalam@gmail.com          
-Follow Me [@rajaramtt](//twitter.com/rajaramtt) for latest updates.
-Follow Me [@rajaramtt](//fb.com/rajaramtt) for latest updates.
+Follow Me for latest updates. 
+Twitter : [@rajaramtt](//twitter.com/rajaramtt) 
+FaceBook: [@rajaramtt](//fb.com/rajaramtt)
 
 ## License
 
