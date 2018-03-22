@@ -1,7 +1,7 @@
 {
   "name": "jquery-input-mask-phone-number",
   "description": "A jQuery Plugin to make masks on input field to US phone format.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/rajaramtt/jquery-input-mask-phone-number",
   "main": "./dist/jquery-input-mask-phone-number.js",
   "author": "fancyApps",
@@ -19,7 +19,10 @@
     "US phone",
     "phoneformat",
     "jQuery",
-    "plugin"
+    "plugin",
+    "inputmask",
+    "mask",
+    "form"    
   ],
   "bugs": {
     "url": "https://github.com/rajaramtt/jquery-input-mask-phone-number/issues"
