@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 ## Demo Example
 
-Working JSFiddle Link https://jsfiddle.net/1kbat1nb/
+Working JSFiddle Link https://jsfiddle.net/1kbat1nb/751/
 
 
 
@@ -54,13 +54,14 @@ Email Us : rajaram.tavalam@gmail.com
 Follow Me for latest updates. 
 Twitter : [@rajaramtt](//twitter.com/rajaramtt) 
 FaceBook: [@rajaramtt](//fb.com/rajaramtt)
+Medium:  [@rajaramtt](//medium.com/@rajaramtt)
 
 ## License
 
 
 (The MIT License)
 
-Copyright (c) 2018 Raja Rama Mohan T<raja.thavalam@gmail.com>
+Copyright (c) 2018 Raja Rama Mohan Thavalam<rajaram.tavalam@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
