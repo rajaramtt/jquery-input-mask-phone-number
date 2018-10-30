@@ -36,9 +36,9 @@
                 }
                 var curchr = this.value.length;
                 var curval = $(this).val();
-                if (curchr == 3) {
+                if (curchr == 3 && e.which != 8 && e.which != 0) {
                     $(this).val(curval + "-");
-                } else if (curchr == 7) {
+                } else if (curchr == 7 && e.which != 8 && e.which != 0) {
                     $(this).val(curval + "-");
                 }
                 $(this).attr('maxlength', '12');
@@ -51,9 +51,9 @@
                 }
                 var curchr = this.value.length;
                 var curval = $(this).val();
-                if (curchr == 3) {
+                if (curchr == 3 && e.which != 8 && e.which != 0) {
                     $(this).val('(' + curval + ')' + " ");
-                } else if (curchr == 9) {
+                } else if (curchr == 9 && e.which != 8 && e.which != 0) {
                     $(this).val(curval + "-");
                 }
                 $(this).attr('maxlength', '14');
