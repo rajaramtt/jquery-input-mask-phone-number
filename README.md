@@ -42,6 +42,16 @@ $(document).ready(function () {
 });
 ```
 
+3\. CDN 
+
+https://unpkg.com/jquery-input-mask-phone-number@1.0.13/dist/jquery-input-mask-phone-number.js
+
+```html
+<script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.13/dist/jquery-input-mask-phone-number.js"></script>
+```
+
+
+
 ## Demo Example
 
 Working JSFiddle Link http://jsfiddle.net/rajaramtt/7s3eLokc/22/
