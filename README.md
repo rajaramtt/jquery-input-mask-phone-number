@@ -50,11 +50,26 @@ Working JSFiddle Link https://jsfiddle.net/rajaramtt/7s3eLokc/9/
 
 ## Help/Assistance
 
-Email Us : rajaram.tavalam@gmail.com          
+Create issue : https://github.com/rajaramtt/jquery-input-mask-phone-number/issues         
+
+
+## Developer
+
+Developer: Raja Rama Mohan Thavalam <https://about.me/rajaramtt>  
+
+
+| Raja Rama Mohan Thavalam | 
+| ----------------- |
+| ![Raja Rama Mohan Thavalam][rajaramtt] |
+
+[rajaramtt]: https://avatars1.githubusercontent.com/u/17231665
+
 Follow Me for latest updates. 
+Medium:  [@rajaramtt](//medium.com/@rajaramtt)
 Twitter : [@rajaramtt](//twitter.com/rajaramtt) 
 FaceBook: [@rajaramtt](//fb.com/rajaramtt)
-Medium:  [@rajaramtt](//medium.com/@rajaramtt)
+
+
 
 ## License
 

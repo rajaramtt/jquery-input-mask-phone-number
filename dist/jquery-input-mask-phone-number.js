@@ -1,10 +1,12 @@
 // ==================================================
 // 
-// jquery-input-mask-phone-number v1.0
+// jquery-input-mask-phone-number 1.0.12
 //
 // Licensed (The MIT License)
 // 
 // Copyright © Raja Rama Mohan Thavalam <rajaram.tavalam@gmail.com>
+//
+// Last Updated On: 09/Aug/2020 IST 11:43 
 //
 // ==================================================
 
@@ -18,12 +20,18 @@
 
         if (params.format === 'xxx-xxx-xxxx') {
             $(this).bind('paste', function (e) {
+
                 e.preventDefault();
-                var inputValue = e.originalEvent.clipboardData.getData('Text');
+                var inputValue = e.originalEvent && e.originalEvent.clipboardData.getData('Text');
+                inputValue = inputValue.replace(/\D/g, '');
                 if (!$.isNumeric(inputValue)) {
                     return false;
                 } else {
-                    inputValue = String(inputValue.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"));
+                    if (inputValue.length > 9) {
+                        inputValue = String(inputValue.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"));
+                    } else {
+                        inputValue = String(inputValue.replace(/(\d{3})(?=\d)/g, '$1-'));
+                    }
                     $(this).val(inputValue);
                     $(this).val('');
                     inputValue = inputValue.substring(0, 12);
@@ -31,7 +39,19 @@
                 }
             });
             $(this).on('keydown touchend', function (e) {
-                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+
+                e = e || window.event;
+                var key = e.which || e.keyCode; // keyCode detection
+                var ctrl = e.ctrlKey ? e.ctrlKey : ((key === 17) ? true : false); // ctrl detection
+                if (key == 86 && ctrl) { // Ctrl + V Pressed !
+
+                } else if (key == 67 && ctrl) { // Ctrl + C Pressed !
+
+                } else if (key == 88 && ctrl) { // Ctrl + x Pressed !
+
+                } else if (key == 65 && ctrl) { // Ctrl + a Pressed !
+                    $(this).trigger("paste");
+                } else if (e.which != 8 && e.which != 0 && !(e.keyCode >= 96 && e.keyCode <= 105) && !(e.keyCode >= 48 && e.keyCode <= 57)) {
                     return false;
                 }
                 var curchr = this.value.length;
@@ -46,7 +66,19 @@
 
         } else if (params.format === '(xxx) xxx-xxxx') {
             $(this).on('keydown touchend', function (e) {
-                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+
+                e = e || window.event;
+                var key = e.which || e.keyCode; // keyCode detection
+                var ctrl = e.ctrlKey ? e.ctrlKey : ((key === 17) ? true : false); // ctrl detection
+                if (key == 86 && ctrl) { // Ctrl + V Pressed !
+
+                } else if (key == 67 && ctrl) { // Ctrl + C Pressed !
+
+                } else if (key == 88 && ctrl) { //Ctrl + x Pressed
+
+                } else if (key == 65 && ctrl) { //Ctrl + a Pressed !
+                    $(this).trigger("paste");
+                } else if (e.which != 8 && e.which != 0 && !(e.keyCode >= 96 && e.keyCode <= 105) && !(e.keyCode >= 48 && e.keyCode <= 57)) {
                     return false;
                 }
                 var curchr = this.value.length;
@@ -57,14 +89,26 @@
                     $(this).val(curval + "-");
                 }
                 $(this).attr('maxlength', '14');
+
             });
             $(this).bind('paste', function (e) {
+
                 e.preventDefault();
-                var inputValue = e.originalEvent.clipboardData.getData('Text');
+                var inputValue = e.originalEvent && e.originalEvent.clipboardData.getData('Text');
+                inputValue = inputValue.replace(/\D/g, '');
+
                 if (!$.isNumeric(inputValue)) {
                     return false;
                 } else {
-                    inputValue = String(inputValue.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3"));
+
+                    if (inputValue.length > 9) {
+                        inputValue = String(inputValue.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3"));
+                    } else if (inputValue.length > 6) {
+                        inputValue = String(inputValue.replace(/(\d{3})(\d{3})(?=\d)/g, '($1) $2-'));
+                    } else if (inputValue.length > 3) {
+                        inputValue = String(inputValue.replace(/(\d{3})(?=\d)/g, '($1) '));
+                    }
+
                     $(this).val(inputValue);
                     $(this).val('');
                     inputValue = inputValue.substring(0, 14);
@@ -73,5 +117,6 @@
             });
 
         }
+        
     }
 }(jQuery));
