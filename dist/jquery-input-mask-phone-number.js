@@ -1,12 +1,12 @@
 // ==================================================
 // 
-// jquery-input-mask-phone-number 1.0.12
+// jquery-input-mask-phone-number 1.0.14
 //
 // Licensed (The MIT License)
 // 
 // Copyright © Raja Rama Mohan Thavalam <rajaram.tavalam@gmail.com>
 //
-// Last Updated On: 09/Aug/2020 IST 11:43 
+// Last Updated On: 22/Aug/2020 IST  12:05 AM 
 //
 // ==================================================
 
@@ -51,7 +51,7 @@
 
                 } else if (key == 65 && ctrl) { // Ctrl + a Pressed !
                     $(this).trigger("paste");
-                } else if (e.which != 8 && e.which != 0 && !(e.keyCode >= 96 && e.keyCode <= 105) && !(e.keyCode >= 48 && e.keyCode <= 57)) {
+                } else if (key != 9 && e.which != 8 && e.which != 0 && !(e.keyCode >= 96 && e.keyCode <= 105) && !(e.keyCode >= 48 && e.keyCode <= 57)) {
                     return false;
                 }
                 var curchr = this.value.length;
@@ -78,7 +78,7 @@
 
                 } else if (key == 65 && ctrl) { //Ctrl + a Pressed !
                     $(this).trigger("paste");
-                } else if (e.which != 8 && e.which != 0 && !(e.keyCode >= 96 && e.keyCode <= 105) && !(e.keyCode >= 48 && e.keyCode <= 57)) {
+                } else if (key != 9 && e.which != 8 && e.which != 0 && !(e.keyCode >= 96 && e.keyCode <= 105) && !(e.keyCode >= 48 && e.keyCode <= 57)) {
                     return false;
                 }
                 var curchr = this.value.length;
