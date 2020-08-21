@@ -44,17 +44,17 @@ $(document).ready(function () {
 
 3\. CDN 
 
-https://unpkg.com/jquery-input-mask-phone-number@1.0.13/dist/jquery-input-mask-phone-number.js
+https://unpkg.com/jquery-input-mask-phone-number@1.0.14/dist/jquery-input-mask-phone-number.js
 
 ```html
-<script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.13/dist/jquery-input-mask-phone-number.js"></script>
+<script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.14/dist/jquery-input-mask-phone-number.js"></script>
 ```
 
 
 
 ## Demo Example
 
-Working JSFiddle Link http://jsfiddle.net/rajaramtt/7s3eLokc/22/
+Working JSFiddle Link http://jsfiddle.net/rajaramtt/7s3eLokc/23/
 
 
 
