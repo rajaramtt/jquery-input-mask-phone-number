@@ -54,7 +54,7 @@ https://unpkg.com/jquery-input-mask-phone-number@1.0.14/dist/jquery-input-mask-p
 
 ## Demo Example
 
-Working JSFiddle Link http://jsfiddle.net/rajaramtt/7s3eLokc/23/
+Working JSFiddle Link http://jsfiddle.net/rajaramtt/7s3eLokc/25/
 
 
 
@@ -63,6 +63,10 @@ Working JSFiddle Link http://jsfiddle.net/rajaramtt/7s3eLokc/23/
 Create issue : https://github.com/rajaramtt/jquery-input-mask-phone-number/issues         
 
 
+## Contribute
+
+ Pick one of the issues from the  [issue list](https://github.com/rajaramtt/jquery-input-mask-phone-number/issues) to get started.
+ 
 ## Developer
 
 Developer: Raja Rama Mohan Thavalam <https://about.me/rajaramtt>  
