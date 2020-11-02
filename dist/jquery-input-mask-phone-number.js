@@ -42,7 +42,7 @@
 
                 e = e || window.event;
                 var key = e.which || e.keyCode; // keyCode detection
-                var ctrl = e.ctrlKey ? e.ctrlKey : ((key === 17) ? true : false); // ctrl detection
+                var ctrl = e.ctrlKey || e.metaKey || key === 17; // ctrl detection
                 if (key == 86 && ctrl) { // Ctrl + V Pressed !
 
                 } else if (key == 67 && ctrl) { // Ctrl + C Pressed !
@@ -69,7 +69,7 @@
 
                 e = e || window.event;
                 var key = e.which || e.keyCode; // keyCode detection
-                var ctrl = e.ctrlKey ? e.ctrlKey : ((key === 17) ? true : false); // ctrl detection
+                var ctrl = e.ctrlKey || e.metaKey || key === 17; // ctrl detection
                 if (key == 86 && ctrl) { // Ctrl + V Pressed !
 
                 } else if (key == 67 && ctrl) { // Ctrl + C Pressed !
